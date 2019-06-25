@@ -1,0 +1,126 @@
+body {
+  background: #000;
+  font-family: "Amazon Ember", Helvetica, sans-serif;
+}
+#controlsOverlay {
+  position: fixed;
+  z-index: 99;
+  background: rgb(10, 10, 10);
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+.normal {
+  opacity: 0.8;
+}
+.fadeOut {
+  -webkit-transition: opacity 250ms ease-in-out;
+  opacity: 0;
+}
+#controlsOverlay.fadeIn {
+  -webkit-transition: opacity 150ms ease-in-out;
+  opacity: 0.8;
+}
+#controlsContainer.fadeIn {
+  -webkit-transition: opacity 150ms ease-in-out;
+  opacity: 1;
+}
+#seekContainer,
+#controlsContainer  {
+  display: none;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+#title {
+  margin: 0 auto;
+  width: 80%;
+  position: fixed;
+  font-size: 2.5em;
+  color: #fff;
+  text-align: center;
+}
+#controls  {
+  margin: 0 auto;
+  width: max-content;
+}
+#togglePlayButton {
+  min-width: 90px;
+}
+.controlButton {
+  float: left;
+  padding: 20px 100px;
+}
+#playerContainer {
+
+}
+#player {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+#playIcon {
+  display: none;
+}
+#seekBar {
+  display: block;
+  width: 85%;
+  margin: 0px auto;
+}
+input[type=range] {
+  -webkit-appearance: none;
+  width: 100%;
+  margin: 6.5px 0;
+  background: rgba(200, 200, 200, 0.5);
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  box-shadow: 2.1px 2.1px 0px rgba(0, 0, 0, 0), 0px 0px 2.1px rgba(13, 13, 13, 0);
+  color: #49cbf4;
+  background: #49cbf4;
+  border-radius: 0px;
+  border: 0px solid #010101;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 0px #000000, 0px 0px 0px #0d0d0d;
+  border: 0px solid #646464;
+  height: 16px;
+  width: 16px;
+  border-radius: 24px;
+  background: #ffffff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -6.5px;
+}
+.seekTime {
+  position: absolute;
+  top: 48px;
+  color: #fff;
+  box-sizing: content-box;
+  display: block;
+  font-family: "Amazon Ember", Helvetica, sans-serif;
+  font-size: 30.2416px;
+  font-weight: 400;
+  height: 31.8281px;
+  line-height: normal;
+  pointer-events: auto;
+  shape-rendering: crispEdges;
+  text-align: center;
+  text-size-adjust: 100%;
+  touch-action: none;
+  user-select: none;
+  width: 77.9844px;
+  -webkit-font-smoothing: antialiased;
+}
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}

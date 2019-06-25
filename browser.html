@@ -1,0 +1,46 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="controlsOverlay" class="normal"></div>
+  <div id="controlsContainer">
+    <div id="title"></div>
+    <div id="controls">
+      <div id="seekBackButton" class="controlButton">
+        <img class="svgBackground" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODUiIHZpZXdCb3g9IjAgMCA4MCA4NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MTBzIGJhY2s8L3RpdGxlPjxwYXRoIGQ9Ik0xNS4xOTcgMTQuNDc4bDMuMjY4IDEuNzUzQzkuNDk1IDIyLjc5IDMuNjYyIDMzLjM4OCAzLjY2MiA0NS4zNTNjMCAxOS45MTMgMTYuMTQzIDM2LjA1NiAzNi4wNTYgMzYuMDU2IDE5LjkxNCAwIDM2LjA1Ny0xNi4xNDMgMzYuMDU3LTM2LjA1NiAwLTE4LjI0LTEzLjU0Ny0zMy4zMDgtMzEuMTI3LTM1LjcxM3Y0Ljg2N3MuMDA4Ljk2OC0uMzA1IDEuMTAzYy0uNDI1LjE4My0xLjA0LS4yMjQtMS4wNC0uMjI0TDMxLjQyOCA5LjA1cy0uODE4LS4zODctLjgxOC0uNzRjMC0uNDIzLjgxNi0uNzk4LjgxNi0uNzk4TDQzLjYuODk4cy4zNjgtLjI2NC43NzItLjA0OGMuMjkuMTU0LjI3Ni44MjMuMjc2LjgyM1Y2LjI0YzE5LjQ1IDIuNDI2IDM0LjUwNyAxOS4wMDMgMzQuNTA3IDM5LjExMiAwIDIxLjc4LTE3LjY1NiAzOS40MzctMzkuNDM3IDM5LjQzN0MxNy45MzggODQuNzkuMjgyIDY3LjEzLjI4MiA0NS4zNWMwLTEyLjUxIDUuODMtMjMuNjUgMTQuOTE1LTMwLjg3NCIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="">
+        <span class="seekTime">10</span>
+      </div>
+      <div id="togglePlayButton" class="controlButton">
+        <img id="playIcon" class="svgBackground" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI5MCIgaGVpZ2h0PSI5MCIgdmlld0JveD0iMCAwIDkwIDkwIj48cGF0aCBmaWxsPSIjRkZGIiBkPSJNODguMTY0IDQyLjc2YzIuNDQ3IDEuMjM4IDIuNDQ3IDMuMjQyIDAgNC40OEw0LjQzNCA4OS41MTNDMS45ODQgOTAuNzUgMCA4OS41NDcgMCA4Ni44M1YzLjE3QzAgLjQ1IDEuOTg1LS43NSA0LjQzNC40ODVsODMuNzMgNDIuMjc1eiIvPjwvc3ZnPg==" alt="">
+        <img id="pauseIcon" class="svgBackground" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI3NSIgaGVpZ2h0PSI5NSIgdmlld0JveD0iMCAwIDc1IDk1Ij48cGF0aCBmaWxsPSIjRkZGIiBkPSJNMCAwaDI1djk1SDB6TTUwIDBoMjV2OTVINTB6Ii8+PC9zdmc+" alt="">
+      </div>
+      <div id="seekForwardButton" class="controlButton">
+        <img class="svgBackground" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODAiIGhlaWdodD0iODUiIHZpZXdCb3g9IjAgMCA4MCA4NSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48dGl0bGU+MTBzIGZvcndhcmQ8L3RpdGxlPjxwYXRoIGQ9Ik02NC4yNCAxNC40NzhsLTMuMjcgMS43NTNjOC45NzMgNi41NiAxNC44MDUgMTcuMTU3IDE0LjgwNSAyOS4xMjIgMCAxOS45MTMtMTYuMTQzIDM2LjA1Ni0zNi4wNTcgMzYuMDU2LTE5LjkxMyAwLTM2LjA1Ni0xNi4xNDMtMzYuMDU2LTM2LjA1NiAwLTE4LjI0IDEzLjU0Ny0zMy4zMDggMzEuMTI3LTM1LjcxM3Y0Ljg2N3MtLjAxLjk2OC4zMDQgMS4xMDNjLjQyNS4xODMgMS4wNC0uMjI0IDEuMDQtLjIyNEw0OC4wMSA5LjA1cy44MTctLjM4Ny44MTctLjc0YzAtLjQyMy0uODE3LS43OTgtLjgxNy0uNzk4TDM1LjgzNy44OThzLS4zNy0uMjY0LS43NzItLjA0OGMtLjI5LjE1NC0uMjc2LjgyMy0uMjc2LjgyM1Y2LjI0QzE1LjMzNiA4LjY2NS4yOCAyNS4yNDIuMjggNDUuMzVjMCAyMS43OCAxNy42NTYgMzkuNDM3IDM5LjQzNiAzOS40MzdTNzkuMTU1IDY3LjEzIDc5LjE1NSA0NS4zNWMwLTEyLjUxLTUuODMtMjMuNjUtMTQuOTE1LTMwLjg3NCIgZmlsbD0iI0ZGRiIgZmlsbC1ydWxlPSJldmVub2RkIi8+PC9zdmc+" alt="">
+        <span class="seekTime">10</span>
+      </div>
+    </div>
+    <div id="seekContainer">
+      <input type="range" id="seekBar" value="0">
+    </div>
+  </div>
+  <div id="playerContainer">
+    <video id="player" ></video>
+  </div>
+  <script type="text/javascript">
+    var forcePlaybackParameters = {
+      contentUri: JSON.stringify({
+        streamUrl: 'https://media.w3.org/2010/05/sintel/trailer.mp4',
+        title: 'Sintel',
+      }),
+      accessToken: 'a1b2c3',
+      offsetInMilliseconds: 0,
+      autoplay: true,
+    };
+  </script>
+  <script type="text/javascript" src="jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://s3.amazonaws.com/alexa-video-library/device-shim.0.1.min.js"></script>
+  <script type="text/javascript" src="https://dmx0zb087qvjm.cloudfront.net/alexa-web-player-controller.0.1.min.js"></script>
+  <script type="text/javascript" src="player.js"></script>
+</body>
+</html>
